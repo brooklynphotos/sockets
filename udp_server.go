@@ -2,7 +2,7 @@ package sockets
 
 import "net"
 
-func start() {
+func startUDPServer() {
 	udpAddr, err := net.ResolveUDPAddr(resolver, serverAddr)
 	if err != nil {
 		panic("Failed to get address")

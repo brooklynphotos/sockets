@@ -2,7 +2,7 @@ package sockets
 
 import "net"
 
-func connect() {
+func connectUDPClient() {
 	raddr, err := net.ResolveUDPAddr("udp", address)
 	if err != nil {
 		panic("Uh oh", err)

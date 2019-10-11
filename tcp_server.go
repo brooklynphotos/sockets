@@ -2,7 +2,7 @@ package sockets
 
 import "net"
 
-func start() {
+func startTCPServer() {
 	tcpAddr, err := net.ResolveIPAddr(resolver, serverAddr)
 	if err != nil {
 		panic("Failed to get address")

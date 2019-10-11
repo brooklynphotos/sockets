@@ -2,7 +2,7 @@ package sockets
 
 import "net"
 
-func connect() {
+func connectTCPClient() {
 	tcpAddr, err := net.ResolveTCPAddr(resolver, serverAddr)
 	if err != nil {
 		panic("Uh oh", err)
